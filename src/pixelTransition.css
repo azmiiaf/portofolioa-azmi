@@ -42,3 +42,9 @@
     display: none;
     position: absolute;
   }
+
+  @media screen and (max-width: 768px) {
+    .pixelated-image-card {
+      max-width: 90%;
+    }
+  }

@@ -3,6 +3,12 @@ import Card from "./components/Fragments/Card.jsx";
 import BlurText from "./components/Fragments/BlurText.jsx";
 
 function App() {
+
+  const eventNav = () => {
+    const navbarul= document.querySelector('.navbar-ul');
+    navbarul.classList.toggle('active');
+  }
+
   return (
     <>
       <header>
@@ -10,7 +16,7 @@ function App() {
           <h1>
             M. AZMI <b>AL FADILLAH</b>
           </h1>
-          <ul>
+          <ul className="navbar-ul">
             <li>
               <a href="#about">
                 TENTANG
@@ -36,6 +42,12 @@ function App() {
               </a>
             </li>
           </ul>
+          <div className="humburger-nav">
+            <input type="checkbox" onClick={eventNav}/>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </nav>
       </header>
       <main className="main">
@@ -170,7 +182,7 @@ function App() {
                         fontSize: ".8rem",
                         color: "#ffffff",
                       }}
-                    >
+                    ><h2>ShoeStore</h2>
                       <ul className="desc-project">
                         <li>Mengimplementasikan desain yang dibuat menjadi sebuah tampilan website toko sepatu online yang dibuat menggunakan HTML, CSS, dan Javascript.</li>
                       </ul>
@@ -215,6 +227,7 @@ function App() {
                         color: "#ffffff",
                       }}
                     >
+                      <h2>R-Movies</h2>
                       <ul className="desc-project">
                         <li>Mengembangkan projek pada mata kuliah kecerdasan buatan, membuat website infromasi film yang responsif untuk tampilan mobile dan desktop.</li>
                         <li>Mengimplementasikan algoritma Content-Based Filtering pada sistem rekomendasi, untuk menemukan film yang sesuai dengan preferensi pengguna.</li>
