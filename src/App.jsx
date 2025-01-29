@@ -1,5 +1,6 @@
 import "./App.css";
 import Card from "./components/Fragments/Card.jsx";
+import BlurText from "./components/Fragments/BlurText.jsx";
 
 function App() {
   return (
@@ -40,9 +41,12 @@ function App() {
       <main className="main">
         <section id="about">
           <section className="intro">
-            <section className="sub-intro">
-              <h1>Halo, Saya M. Azmi Al Fadillah</h1>
-            </section>
+            <BlurText
+            text="Halo, Saya M. Azmi Al Fadillah"
+            delay={150}
+            animateBy="words"
+            direction="top"
+            className="sub-intro text-2xl mb-8"/>
             <p>
               Saya mahasiswa semester 6 progam studi Informatika di Universitas
               Bhayangkara Jakarta Raya. Memiliki minat karier di bidang
