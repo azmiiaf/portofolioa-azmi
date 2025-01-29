@@ -1,0 +1,377 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'montserat';
+  src: url(font/montserat/Montserrat-VariableFont_wght.ttf);
+}
+
+:root{
+  --primaryClr: #0f0f0f;
+  --secondaryClr: #9b38ff;
+}
+
+* {
+  scroll-behavior: smooth;
+  font-family: 'montserat';
+}
+
+body {
+  background-color: var(--primaryClr);
+  color: #d0d0d0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-image: url(../public/img/bg.png);
+  height: 100%;
+  overflow: hidden;
+}
+
+main {
+  overflow: scroll;
+  height: 90%;
+  position: absolute;
+  scrollbar-width: none;
+  margin: 80px 0 0 0;
+}
+
+b {
+  color: #d0d0d0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar h1 {
+  margin: 20px 0 0 30px;
+  color: var(--secondaryClr);
+}
+
+.navbar ul {
+  width:50%;
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  text-align: center;
+  margin: 20px auto 5px;
+  font-weight: bold;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #d0d0d0;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar a span {
+  width: 0;
+  height: 2px;
+  margin-top: 5px;
+  transition: .2s;
+  background-color: aliceblue;
+}
+
+.navbar a:hover span {
+  width: 100%;
+  display: block;
+  background-color: var(--secondaryClr);
+}
+
+.navbar a::marker{
+  color: red;
+}
+
+
+#about {
+  width: 98%;
+  display: flex;
+  padding-top: 50px;
+  gap: 200px;
+  overflow: hidden;
+  margin: 0 0 0 10px;
+}
+
+#experience {
+  width: 100%;
+  text-align: center;
+  margin-top: 120px;
+  padding-top: 30px;
+}
+
+#skill {
+  width: 100%;
+  text-align: center;
+  margin-top: 120px;
+  padding-top: 30px;
+}
+
+#project {
+  width: 100%;
+  text-align: center;
+  margin: 120px auto 0;
+  padding-top: 30px;
+}
+
+.intro {
+  width: 50%;
+  margin-left: 50px;
+}
+
+.sub-intro {
+  width: 65%;
+  margin-left: 20px;
+}
+
+.intro h1 {
+  animation: typing 5s infinite alternate steps(80, end), blink-caret .7s infinite;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  color: var(--secondaryClr);
+  font-size: 35px;
+  border-right: 2px solid red;
+}
+
+.contact-me {
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #6b00d6;
+  color: var(--secondaryClr);
+  border-radius: 50px;
+}
+
+.contact a {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding: 5px;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 30px 20px 10px 0;
+  border: 2px solid var(--secondaryClr);
+}
+
+.contact a:hover {
+  box-shadow: 0 0 10px 5px var(--secondaryClr);
+  transition: .2s;
+}
+
+.icon{
+  width: 70%;
+  margin-top: 6px;
+}
+
+.profile{
+  width: 105%;
+  margin: -10px 0 0 -20px;
+  filter: grayscale(100%);
+}
+
+
+.kotak {
+  width: 400px;
+  height: 400px;
+  z-index: -1;
+  position: absolute;
+  overflow: hidden;
+  right: 0;
+  display: block;
+  border-top-left-radius: 30%;
+  border-bottom-left-radius: 30%;
+  background-color: var(--secondaryClr);
+}
+
+
+.cards {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 40%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 30px 20px;
+  backdrop-filter: blur(3px);
+  background-color: #9c38ff26;
+}
+
+.img {
+  width: 80%;
+  height: 250px;
+  margin: 5px auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.img img {
+  width: 100%;
+  margin-top: -260px;
+  border-radius: 20px;
+}
+
+.card .desc h3 {
+  color: var(--secondaryClr);
+}
+.card h4{
+  margin: -5px 0;
+}
+
+.card p {
+  font-size: 12px;
+}
+
+#experience:nth-child(3) .img img {
+  margin-top: -270px;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 30px;
+}
+
+.col-skills {
+  width: 80%;
+  gap: 10px;
+  margin: 90px auto;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+.skill-card {
+  width: 200px;
+  height: 70px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid var(--secondaryClr);
+  backdrop-filter: blur(3px);
+  border-radius: 20px;
+  display: flex;
+  justify-content: first baseline;
+  box-shadow: 0 0 10px 3px var(--secondaryClr);
+  gap: 10px;
+}
+
+.skill-card img {
+  width: 30%;
+}
+
+.skill-card h4 {
+  margin: auto 0;
+}
+
+
+#project a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
+
+#project a p, h4 {
+  color: #d0d0d0;
+}
+
+#project  .project-card:hover {
+  box-shadow: 0 0 10px 5px var(--secondaryClr);
+  transition: .2s;
+}
+
+.col-project {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  margin: 60px auto;
+  flex-wrap: wrap;
+  gap: 2em;
+  padding-left: 2em;
+  box-sizing: border-box;
+}
+
+.project-card {
+  width: 35%;
+  height: 400px;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  padding: 4px;
+  border-radius: 20px;
+  backdrop-filter: blur(1.5px);
+  overflow: hidden;
+  border: 2px solid var(--secondaryClr);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.project-card h4{
+  margin: 10px 0 0 0;
+}
+
+.card-project {
+  max-width: fit-content;
+  overflow: hidden;
+}
+
+.desc-project {
+  text-align: left;
+}
+
+
+/* Amimation */
+
+@keyframes typing {
+  0% {
+      width: 0;
+  }
+  50% {
+      width: 140%;
+      animation-delay: 30s;
+  }
+  60% {
+      width: 140%;
+      animation-delay: 30s;
+  }
+  70% {
+      width: 140%;
+      animation-delay: 30s;
+  }
+  100% {
+      width: 0;
+      animation-delay: 30s;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+      border-color: transparent;
+  }
+  50% {
+      border-color: var(--secondaryClr);
+  }
+}
