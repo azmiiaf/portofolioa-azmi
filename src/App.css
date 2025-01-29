@@ -69,10 +69,6 @@ b {
   font-weight: bold;
 }
 
-.humburger-nav { 
-  display: none;
-}
-
 .navbar a {
   text-decoration: none;
   color: #d0d0d0;
@@ -347,8 +343,7 @@ b {
 }
 
 .humburger-nav {
-  /* display: none; */
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 .humburger-nav span{
@@ -431,6 +426,7 @@ b {
   
   .humburger-nav {
     margin: 1em;
+    display: flex;
   }
 
   .humburger-nav input {
