@@ -162,27 +162,27 @@ function App() {
           <h3>KEMAMPUAN</h3>
           <section className="col-skills">
             <section className="skill-card">
-              <img src="img/html-5.png" alt="html" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="html" />
               <h4>HTML</h4>
             </section>
             <section className="skill-card">
-              <img src="img/css-3.png" alt="CSS" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" />
               <h4>CSS</h4>
             </section>
             <section className="skill-card">
-              <img src="img/js.png" alt="Javascript" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="Javascript" />
               <h4>Javascript</h4>
             </section>
             <section className="skill-card">
-              <img src="img/tailwind.png" alt="Tailwind" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind" />
               <h4>Tailwind</h4>
             </section>
             <section className="skill-card">
-              <img src="img/react.png" alt="React Js" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React Js" />
               <h4>React Js</h4>
             </section>
             <section className="skill-card">
-              <img src="img/git.png" alt="React Js" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git/GitHub" />
               <h4>Git/GitHub</h4>
             </section>
           </section>
