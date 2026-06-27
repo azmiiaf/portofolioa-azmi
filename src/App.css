@@ -175,8 +175,11 @@ b {
 }
 
 .profile{
-  width: 105%;
-  margin: -10px 0 0 -20px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 125%;
   filter: grayscale(100%);
 }
 
