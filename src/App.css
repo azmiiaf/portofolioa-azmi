@@ -359,39 +359,21 @@ b {
   top: 5em;
 }
 
-/* Amimation */
-
-@keyframes typing {
-  0% {
-      width: 0;
-  }
-  50% {
-      width: 140%;
-      animation-delay: 30s;
-  }
-  60% {
-      width: 140%;
-      animation-delay: 30s;
-  }
-  70% {
-      width: 140%;
-      animation-delay: 30s;
-  }
-  100% {
-      width: 0;
-      animation-delay: 30s;
-  }
+#sertification {
+  width: 100%;
+  padding-bottom: 50px;
 }
 
-@keyframes blink-caret {
-  from, to {
-      border-color: transparent;
-  }
-  50% {
-      border-color: var(--secondaryClr);
-  }
+.col-sertif {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  margin: 60px auto;
+  box-sizing: border-box;
 }
-
 /* Mobile Styles */
 @media (max-width: 768px) {
   #root {
@@ -534,12 +516,20 @@ b {
   }
   .col-project {
     flex-direction: column;
+    align-items: center;
     width: 100%;
-    padding-left: 1em;
+    padding: 0;
   }
 
-
-}
+  .col-sertif {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  
+  .container-card-sertif {
+    width: 90%;
+  }}
 
 /* Tablet Styles */
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -550,7 +540,8 @@ b {
   .navbar ul {
     width: 50%;
     display: flex;
-    font-size: .8em;
+    font-size: .7em;
+    gap: 2em;
   }
 
   .humburger-nav {
