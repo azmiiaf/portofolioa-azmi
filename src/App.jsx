@@ -97,7 +97,7 @@ function App() {
           <section className="cards">
             <section className="card">
               <section className="img">
-                <img src="img/experience_mentor.jpg" alt="Lead Frontend Dev" />
+                <img src="img/experience_mentor.png" alt="Lead Frontend Dev" />
               </section>
               <section className="desc">
                 <h3>DSC Ubhara (Development Student Club)</h3>
