@@ -454,7 +454,6 @@ function App() {
               title="Sertifikasi Kompetensi - Junior Web Developer"
               issuer="Lembaga Sertifikasi BPPTIK"
               date="November 2025 - November 2025"
-              credential="#"
               src="img/cert_bpptik.png"
             />
           </div>
