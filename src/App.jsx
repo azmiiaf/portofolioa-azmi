@@ -356,7 +356,7 @@ function App() {
                 className="custom-pixel-card"
               />
             </a>
-            <a href="#" target="_blank" className="card-project">
+            <a className="card-project banksampah">
               <Card
                 firstContent={
                   <img
